@@ -25,5 +25,5 @@ delete myArray[1];
 console.log(myArray);
 
 // Untuk menghapus elemen, gunakan metode splice()
-myArray.splice(2, 1); // Untuk menghapus elemen, gunakan metode splice()
+myArray.splice(2, 1,'apl'); // Untuk menghapus elemen, gunakan metode splice()
 console.log(myArray);

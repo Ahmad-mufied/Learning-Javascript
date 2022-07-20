@@ -62,9 +62,48 @@ const obj1 = { fisrtName: 'Obi-Wan', age: 30};
 const obj2 = { lastName: 'Kenobi', gender: 'M'};
 const newObj = {...obj1, ...obj2};
 console.log(newObj);
-
+console.log({...obj1, ...{ini: 'oke'}});
+console.log('')
 /* output
 { firstName: 'Obi-Wan', age: 30, lastName: 'Kenobi', gender: 'M' }
 */
+const namaOrang = {
+  firstName: 'Ahmad',
+  lastName: 'Nugroho'
+}
 
+const alamatLengkap = {
+  kota: 'Lampung Selatan',
+  kecamatan: 'Natar',
+  desa: 'Pemanggilan'
+}
 
+const dataLengkap = (namaOrang, umur, alamat) => {
+  const {kota, kecamatan, desa} = alamat
+  return {...namaOrang, umur, ...alamat}
+}
+
+console.log(dataLengkap(namaOrang, 20, alamatLengkap))
+console.log('')
+
+/*
+
+{
+  firstName: 'Ahmad',
+  lastName: 'Nugroho',
+  umur: 20,
+  kota: 'Lampung Selatan',
+  kecamatan: 'Natar',
+  desa: 'Pemanggilan'
+}
+
+ */
+
+let numberObject = {
+  numA: 1
+}
+
+numB = 2;
+console.log(numberObject)
+numberObject = {...numberObject, numB}
+console.log(numberObject)

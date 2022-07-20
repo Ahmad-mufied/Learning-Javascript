@@ -58,7 +58,7 @@ let fullName = "Luke" + "Skywalker"; // "Luke" + "Skywalker" juga merupakan expr
 * Jika menginisialisasi kembali nilai variabel yang menggunakan const, kita akan mendapati eror “TypeError: Assignment to constant variable.”
 */
 
-const z = 100;
+let z = 100;
 console.log(z);
 z = 200;
 console.log(z)
